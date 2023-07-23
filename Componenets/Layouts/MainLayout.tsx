@@ -1,4 +1,4 @@
-import { PropsWithChildren } from 'react';
+// import { PropsWithChildren } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from './MainLayout.module.css';
@@ -7,9 +7,9 @@ import { Navbar } from '../Navbar/Navbar';
 
 const inter =  Inter({ subsets: ['latin'] });
 
-type MyComponentProps = PropsWithChildren<{}>;
 
-export default function MainLayout({ children }: MyComponentProps) {
+
+export default function MainLayout({ children }: {children: React.ReactNode}) {
     return (
         <>
             <Head>
