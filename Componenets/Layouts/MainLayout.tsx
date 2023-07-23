@@ -15,7 +15,7 @@ export const MainLayout: FC<PropsWithChildren<{}>> = ({ children }) => {
                 <meta name="description" content="Home Page" />
                 <Link rel="icon" href="/favicon.ico" />
             </Head>
-            <Navbar />
+            {/* <Navbar /> */}
             <main className={`${styles.main} ${inter.className}`}>
                 {children}
             </main>
