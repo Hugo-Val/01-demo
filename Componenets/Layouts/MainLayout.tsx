@@ -13,7 +13,7 @@ const inter =  Inter({ subsets: ['latin'] });
 export default function MainLayout({ children }: {children: React.ReactNode}) {
     return (
         <>
-            <Head>
+            {/* <Head>
                 <title>Home - Hugo Valencia</title>
                 <meta name="description" content="Home Page" />
                 <Link rel="icon" href="/favicon.ico" />
@@ -21,7 +21,7 @@ export default function MainLayout({ children }: {children: React.ReactNode}) {
             <Navbar />
             <main className={`${styles.main} ${inter.className}`}>
                 {children}
-            </main>
+            </main> */}
         </>
     )
 }
