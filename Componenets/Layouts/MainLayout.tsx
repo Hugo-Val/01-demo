@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren } from 'react';
+import { FC } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from './MainLayout.module.css';
@@ -7,7 +7,7 @@ import { Navbar } from '../Navbar/Navbar';
 
 const inter =  Inter({ subsets: ['latin'] });
 
-export const MainLayout: FC<PropsWithChildren<{}>> = ({ children }) => {
+export const MainLayout = ( { children }) => {
     return (
         <>
             <Head>
@@ -15,7 +15,7 @@ export const MainLayout: FC<PropsWithChildren<{}>> = ({ children }) => {
                 <meta name="description" content="Home Page" />
                 <Link rel="icon" href="/favicon.ico" />
             </Head>
-            {/* <Navbar /> */}
+            <Navbar />
             <main className={`${styles.main} ${inter.className}`}>
                 {children}
             </main>
