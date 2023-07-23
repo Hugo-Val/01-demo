@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { MainLayout } from "@/Componenets/Layouts/MainLayout"
+import  MainLayout  from "@/Componenets/Layouts/MainLayout"
 
 
 
