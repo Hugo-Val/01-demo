@@ -1,9 +1,10 @@
-// import { PropsWithChildren } from 'react';
+
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from './MainLayout.module.css';
 import { Inter } from 'next/font/google';
 import { Navbar } from '../Navbar/Navbar';
+
 
 const inter =  Inter({ subsets: ['latin'] });
 
