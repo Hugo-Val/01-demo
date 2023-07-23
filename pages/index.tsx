@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { MainLayout } from "@/Componenets/Layouts/MainLayout"
 
 
 
@@ -6,7 +7,7 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <>
+    <MainLayout>
       <h1 className={"title"}>Home Page</h1>
       <h1 className={"title"}>
         Go to <Link href={"/about"}>About</Link> 
@@ -18,6 +19,6 @@ export default function Home() {
         </p>
           
       </div>
-    </>
+    </MainLayout>
   )
 }
