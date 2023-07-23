@@ -11,19 +11,13 @@ export default function Home() {
       <h1 className={"title"}>
         Go to <Link href={"/about"}>About</Link> 
       </h1>
-      <main className={"main"}>
-        <div className={"description"}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={"code"}>pages/index.tsx</code>
-          </p>
+      <div className={"description"}>
+        <p>
+          Get started by editing&nbsp;
+          <code className={"code"}>pages/index.tsx</code>
+        </p>
           
-        </div>
-
-        
-
-        
-      </main>
+      </div>
     </>
   )
 }
