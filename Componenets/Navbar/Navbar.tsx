@@ -1,5 +1,5 @@
-import Link from "next/link";
 import styles from "./Navbar.module.css";
+import { ActiveLink } from "./ActiveLink";
 
 const menuItems = [
     {
@@ -25,7 +25,7 @@ export const Navbar = () => {
         <nav className={styles["menu-container"]}>
             {
                 menuItems.map(({ text, href }, index) => (
-                    <Link key={index} href={href} >{text}</Link>
+                    <ActiveLink key={index} href={href} text={text}></ActiveLink>
                     
                 ))}
             
