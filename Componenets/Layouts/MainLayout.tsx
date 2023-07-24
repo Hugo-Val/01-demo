@@ -17,7 +17,6 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
             <Head>
                 <title>Home - Hugo Valencia</title>
                 <meta name="description" content="Home Page" />
-                <Link rel="icon" href="/public/favicon.ico" />
             </Head>
             <Navbar />
             <main className={`${styles.main} ${inter.className}`}>
