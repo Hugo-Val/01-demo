@@ -7,6 +7,11 @@ const style : CSSProperties = {
     textDecoration: "underline",
 };
 
+const style2 : CSSProperties = {
+    color: "black",
+    textDecoration: "none",
+};
+
 interface Props {
     text: string,
     href: string
@@ -15,7 +20,7 @@ interface Props {
 export const ActiveLink: FC<Props> = ({ text, href }) => {
     const { asPath } = useRouter();
     return (
-        <Link style={asPath === href ? style : undefined} href={href}>
+        <Link style={asPath === href ? style : style2} href={href}>
             {text}
         </Link>
 
